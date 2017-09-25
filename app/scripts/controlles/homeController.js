@@ -1,15 +1,24 @@
-app.controller('homeController', function ($scope) {
-
-    $scope.mdlcheckanimation = false;
-    $scope.butonMessage = "Message default";
-    $scope.message = "Message default";
-    $scope.time = 5000;
+app.controller('homeController', function ($scope, $q, $timeout) {
 
 
-    $scope.data = { active: false };
+    $scope.time = 5000; // Por padrão leva 5 segundos de exibição
+    $scope.message = "Message default"; // Mensagem default
 
+
+    $scope.activeShow = false; // Recebe falso para o elemento ficar escondido
+    $scope.loginAlertMessage = true;
+
+    /**
+     * Função para verificar no evento click se a variavel activeShow está como falso
+     * Configura os segundos de exibição
+    */
     $scope.toggle = function () {
-        $scope.data.active = !$scope.data.active;
+        if (!$scope.activeShow)
+            $scope.activeShow = true;
+
+        return $timeout(function() {
+            $scope.activeShow = false;
+        }, $scope.time);
     };
 
 });

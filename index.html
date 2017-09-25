@@ -90,7 +90,7 @@
 
             <div class="mdl-card mdl-shadow--6dp">
                 <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
-                    <h2 class="mdl-card__title-text">Set toast time</h2>
+                    <h2 class="mdl-card__title-text">Set toast time </h2>
                 </div>
                 <div class="mdl-card__supporting-text">
                     <form action="#">
@@ -125,16 +125,18 @@
 
     <!-- Bloco html onde será exibido a mensagem -->
 
-    <footer ng-show="data.active" class="fadein fadeout mdl-mini-footer mdl-animation hotmilha-animation">
+    <footer ng-show="activeShow" class="fadein fadeout mdl-mini-footer mdl-animation hotmilha-animation">
         <div class="mdl-mini-footer__left-section">
             <div class="mdl-grid">
 
                 <div class="txt_message">
                     <p>{{message}}</p>
-                    <small>{{time}}</small>
                 </div>
-                <div class="txt_button_action">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Finalizar</button>
+                <div class="txt_button_action_desfazer">
+                    <button class="mdl-button mdl-js-button mdl-button--raised">Desfazer</button>
+                </div>
+                <div class="txt_button_action_ok">
+                    <button style="float: right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">OK</button>
                 </div>
 
             </div>
