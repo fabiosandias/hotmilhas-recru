@@ -60,7 +60,10 @@ O comando acima irá baixar todas as dependências que estão no arquivo <code> 
   }
 }
 ```
-
+## Segue o um preview das telas da aplicação
+    Favor assim que abrir a aplicação no seu navegador coloque na resolução do mobile
+    
+    
 ![Alt text](http://hotmilhas.helpmain.com/images/home.png "Optional title attribute")
 
 ![Alt text](http://hotmilhas.helpmain.com/images/home_toast.png "Optional title attribute")
