@@ -1,20 +1,18 @@
-'use strict';
-var app = angular
-    .module('myApp', ['ui.router', 'ngAnimate'])
-    .config(['$httpProvider', '$stateProvider', '$urlRouterProvider', function ($httpProvider, $stateProvider, $urlRouterProvider) {
+(function() {
 
-        $urlRouterProvider.otherwise('/home');
+    'use strict';
 
-        $stateProvider
-            .state('home', {
-                url: '/home',
-                authorize: true,
-                views: {
-                    '': {
-                        controller: 'homeController',
-                        controllerAs: 'vm'
-                    }
-                }
-            })
-    }]);
+    var hotMilhasApp = angular
 
+        .module('hotMilhasApp', [
+            'ui.router',
+            'ngAnimate'
+        ])
+
+        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+            $urlRouterProvider.otherwise('/home');
+
+            $stateProvider.state('home', { url: '/home' });
+        }]);
+
+})();

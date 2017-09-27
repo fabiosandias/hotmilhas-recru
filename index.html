@@ -1,158 +1,114 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+<html lang="pt_br" ng-app="hotMilhasApp">
+	<head>
+	    <meta charset="utf-8">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	    <meta name="description" content="Projeto de teste para recrutamento da HotMilhas">
+	    <meta name="viewport" 	 content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+	    <title>Projeto de teste para recrutamento da HotMilhas</title>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+	    <!-- Add to homescreen for Chrome on Android -->
+	    <meta name="mobile-web-app-capable" content="yes">
+	    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+	    <!-- Add to homescreen for Safari on iOS -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        #view-source {
-            position: fixed;
-            display: block;
-            right: 0;
-            bottom: 0;
-            margin-right: 40px;
-            margin-bottom: 40px;
-            z-index: 900;
-        }
-    </style>
-</head>
-<body>
+	    <!-- Tile icon for Win8 (144x144 + tile color) -->
+	    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	    <meta name="msapplication-TileColor" content="#3372DF">
 
+	    <link rel="shortcut icon" href="images/favicon.png">
 
-<div ng-controller="homeController"
-     class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+		<!-- Material Deisgn Lite -->
+	    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+	    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+	    <link rel="stylesheet" href="//code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
 
+	    <link rel="stylesheet" href="styles.css">
 
-    <!--<div ui-view="header"></div>-->
-    <!--<div ui-view="navbar"></div>-->
-    <!--<div ui-view=""></div>-->
-    <!--<div ui-view="footer"></div>-->
+		<!-- Usando ng-cloak para não mostrar o toast enquanto o Angular compila -->
+	    <style>
+			[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+			  display: none !important;
+			}
+	    </style>
+	</head>
+	<body ng-controller="HomeController as vm" ng-cloak class="ng-cloak">
+		<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--no-drawer mdl-layout--fixed-header">
 
+			<!-- Header  -->
 
-    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Home</span>
-            <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-                    <i class="material-icons">search</i>
-                </label>
-                <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" id="search">
-                    <label class="mdl-textfield__label" for="search">Enter your query...</label>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+		    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+		        <div class="mdl-layout__header-row">
+		            <span class="mdl-layout-title">Home</span>
+		        </div>
+		    </header>
 
-        <nav class="demo-navigation mdl-navigation__link mdl-color--blue-grey-800">
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">home</i>Home</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">inbox</i>Inbox</a>
+			<!-- Form para configurar o Toast -->
 
-        </nav>
-    </div>
+		    <main class="mdl-layout__content mdl-color--grey-100">
+		        <div class="mdl-grid demo-content">
 
-    <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-grid demo-content">
+		            <div class="mdl-card mdl-shadow--6dp">
+		                <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+		                    <h2 class="mdl-card__title-text">Configure o Toast</h2>
+		                </div>
+		                <div class="mdl-card__supporting-text">
+		                    <form>
+		                        <div class="mdl-textfield mdl-js-textfield">
+		                            <input ng-model="vm.time" class="mdl-textfield__input" type="number" id="time"/>
+		                            <label class="mdl-textfield__label" for="time">Entre com o tempo (milisegundos)</label>
 
+		                        </div>
+		                        <div class="mdl-textfield mdl-js-textfield">
+		                            <input ng-model="vm.message" class="mdl-textfield__input" type="text" id="message"/>
+		                            <label class="mdl-textfield__label" for="message">Digite a mensagem</label>
+		                        </div>
+		                    </form>
+		                </div>
 
-            <div class="mdl-card mdl-shadow--6dp">
-                <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
-                    <h2 class="mdl-card__title-text">Set toast time </h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input ng-model="time" class="mdl-textfield__input" type="number" id="time"/>
-                            <label class="mdl-textfield__label" for="time">Enter the display time </label>
+		                <div class="mdl-card__actions">
+		                    <button ng-click="vm.mostrarToast()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="button">Mostrar</button>
+		                </div>
+		            </div>
 
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input ng-model="message" class="mdl-textfield__input" type="text" id="message"/>
-                            <label class="mdl-textfield__label" for="message">Enter the message</label>
-                        </div>
+		        </div>
 
-                    </form>
-                </div>
+				<div class="mdl-card__supporting-text">
+					<h6>Última mensagem: {{vm.ultimaResposta}}</h6>
+				</div>
+		    </main>
 
+		    <!-- Bloco html onde será exibido a mensagem -->
 
+		    <footer ng-show="vm.activeShow" ng-click="vm.clickNoToast()" class="fadein fadeout mdl-mini-footer mdl-animation hotmilha-animation">
+		        <div class="mdl-mini-footer__left-section">
+		            <div class="mdl-grid">
+		                <div class="txt_message">
+		                    <p>{{vm.mensagemAtual}}</p>
+		                </div>
 
-                <div class="mdl-card__actions">
-                    <button ng-click="toggle()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Save</button>
+		                <div class="txt_button_action_ok">
+		                    <button ng-click="vm.clickBotaoFechar()" type="button" style="float: right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fechar</button>
+		                </div>
+		            </div>
+		        </div>
+		    </footer>
+		</div>
 
-                </div>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="//code.getmdl.io/1.3.0/material.min.js"></script>
 
-
-            </div>
-
-
-        </div>
-
-
-    </main>
-
-    <!-- Bloco html onde será exibido a mensagem -->
-
-    <footer ng-show="activeShow" class="fadein fadeout mdl-mini-footer mdl-animation hotmilha-animation">
-        <div class="mdl-mini-footer__left-section">
-            <div class="mdl-grid">
-
-                <div class="txt_message">
-                    <p>{{message}}</p>
-                </div>
-                <div class="txt_button_action_desfazer">
-                    <button class="mdl-button mdl-js-button mdl-button--raised">Desfazer</button>
-                </div>
-                <div class="txt_button_action_ok">
-                    <button style="float: right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">OK</button>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-</div>
-
-
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="app/app.js"></script>
-<script src="app/scripts/controlles/homeController.js"></script>
-
-
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-</body>
+		<script src="app/app.js"></script>
+		<script src="app/scripts/controllers/HomeController.js"></script>
+	</body>
 </html>
