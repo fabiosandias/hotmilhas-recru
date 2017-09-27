@@ -5,7 +5,7 @@
 
 ```
 O modelo de layout foi criado a parti do template do site
-Material Design Lite e essa aplicação foi criada pra rodar mobile.
+Material Design Lite e essa aplicação foi criada pra rodar no mobile web.
 ```
 
 [MATERIAL DESIGN LITE](http://https://getmdl.io/index.html/ "Iŕ para o site Material Design Lite")
