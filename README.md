@@ -4,7 +4,7 @@
 #### Toast de teste usando a promise <code> $q </code> do Angular Js 1.xx
 
 ```
-O modelo de layout foi criado a parti do template do site
+O modelo de layout foi criado a partir do template do site
 Material Design Lite e essa aplicação foi criada pra rodar no mobile web.
 ```
 
