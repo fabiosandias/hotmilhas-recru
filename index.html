@@ -64,7 +64,7 @@
 		                    <form>
 		                        <div class="mdl-textfield mdl-js-textfield">
 		                            <input ng-model="vm.time" class="mdl-textfield__input" type="number" id="time"/>
-		                            <label class="mdl-textfield__label" for="time">Entre com o tempo (milisegundos)</label>
+		                            <label class="mdl-textfield__label" for="time">Entre com o tempo (segundos)</label>
 
 		                        </div>
 		                        <div class="mdl-textfield mdl-js-textfield">
@@ -90,13 +90,13 @@
 
 		    <footer ng-show="vm.activeShow" ng-click="vm.clickNoToast()" class="fadein fadeout mdl-mini-footer mdl-animation hotmilha-animation">
 		        <div class="mdl-mini-footer__left-section">
-		            <div class="mdl-grid">
+		            <div class="mdl-grid mdl_box_mb">
 		                <div class="txt_message">
 		                    <p>{{vm.mensagemAtual}}</p>
 		                </div>
 
 		                <div class="txt_button_action_ok">
-		                    <button ng-click="vm.clickBotaoFechar()" type="button" style="float: right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fechar</button>
+		                    <button ng-click="vm.clickBotaoFechar()" type="button" style="float: right !important;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Fechar</button>
 		                </div>
 		            </div>
 		        </div>

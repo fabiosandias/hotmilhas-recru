@@ -35,7 +35,7 @@ bower install
 O comando acima irá baixar todas as dependências que estão no arquivo <code> bower.json</code>
 
 
-#### o modelo do arquivo bower.json e suas dependências.
+#### O modelo do arquivo bower.json e suas dependências.
 ```javascript
 {
   "name": "hotmilhas-recru",
