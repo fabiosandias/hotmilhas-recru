@@ -30,7 +30,7 @@ bower install
 
 ```
 
-    Estou levando em consideração que você tem o bower instalado em sua maquina.
+    Estou levando em consideração que você tem o bower instalado em sua maquina caso precisasse executar o camando acima.
 
 
 O comando acima irá baixar todas as dependências que estão no arquivo <code> bower.json</code>
