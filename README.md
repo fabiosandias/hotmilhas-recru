@@ -23,7 +23,7 @@ juntamente com o projeto a pasta <code>bower_components</code> para facilitar a 
 Estou ciente que essa não é a maneira correta de usar o bower. Pois, uma vez que se usa tal gerenciador
  a pasta onde ficam as dependências do projeto não se versiona no git.
 
-Caso não tivesse liberado essa pasta no projeto a outra forma de obtela seria pelo bower com o seguinte comando:
+Caso não tivesse liberado essa pasta no projeto a outra forma de obtê-la seria pelo bower com o seguinte comando:
 
 
 ```
@@ -32,7 +32,7 @@ bower install
 ```
 
 
-O comando acima irá baixar todas as dependência que estão no arquivo <code> bower.json</code>
+O comando acima irá baixar todas as dependências que estão no arquivo <code> bower.json</code>
 
 
 #### o modelo do arquivo bower.json e suas dependências.
