@@ -8,11 +8,11 @@ O modelo de layout foi criado a partir do template do site
 Material Design Lite e essa aplicação foi criada pra rodar no mobile web.
 ```
 
-[MATERIAL DESIGN LITE](http://https://getmdl.io/index.html/ "Iŕ para o site Material Design Lite")
+[MATERIAL DESIGN LITE](https://getmdl.io/ "Iŕ para o site Material Design Lite")
 
 Para fazer o teste e ver a aplicação rodando no servidor web segue o link abaixo.
 
-[Clique aqui para ver o demo.](http://hotmilhas.helpmain.com// "Iŕ para o site demo")
+[Clique aqui para ver o demo.](http://hotmilhas.helpmain.com/ "Iŕ para o site demo")
 
 
 
