@@ -12,7 +12,7 @@ Material Design Lite e essa aplicação foi criada pra rodar no mobile web.
 
 Para fazer o teste e ver a aplicação rodando no servidor web segue o link abaixo.
 
-[Clique aqui para ver o demo.](http://hotmilhas.midmain.com.br/ "Iŕ para o site demo")
+[Clique aqui para ver o demo.](http://hotmilhas.helpmain.com// "Iŕ para o site demo")
 
 
 
