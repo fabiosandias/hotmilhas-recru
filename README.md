@@ -59,3 +59,7 @@ O comando acima irá baixar todas as dependências que estão no arquivo <code> 
   }
 }
 ```
+
+![Alt text](http://hotmilhas.helpmain.com/images/home.png "Optional title attribute")
+
+![Alt text](http://hotmilhas.helpmain.com/images/home_toast.png "Optional title attribute")
